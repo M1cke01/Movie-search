@@ -1,0 +1,128 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(57, 64, 70);
+}
+
+body,
+.movie-card,
+input,
+button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(204, 209, 209);
+    color: #000;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 10px;
+    font-weight: 600;
+    color: #0660b4;
+    font-size: 40px;
+}
+
+#logo-pelis {
+    width: 180px;
+    height: auto;
+}
+
+.search {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search-movies {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: rgb(221, 220, 164);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    color: #000;
+}
+
+.movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.movie-card {
+    width: 300px;
+    background-color: #000;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: translateY(-5);
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-name {
+    font-size: 1.5em;
+    color: #d6d3d3;
+    margin: 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.movie-types {
+    display: flex;
+}
+
+.movie-type {
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 5px 5px 5px 0;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    background-color: beige;
+}
+
+.movie-image-container {
+    flex-shrink: 0;
+}
+
+.movie-image {
+    width: 96px;
+    height: 96px;
+}
